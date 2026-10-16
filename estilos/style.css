@@ -10,6 +10,7 @@ html, body {
     height: 100vh;
     width: 100vw;
     background-color: black;
+    overflow-x: hidden;
 }
 
 body {
@@ -28,17 +29,32 @@ section#telefone {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    height: 627px;
-    width: 311px;
-    background: url(../imagens/frame-iphone.png) no-repeat;
+    height: 650px;
+    width: 310px;
+    background: url(../imagens/tela-nova.png) no-repeat;
+    background-size: cover; 
 }
 
 iframe#tela {
     position: relative;
-    top: 80px;
-    left: 22px;
-    width: 269px;
-    height: 471px;
+    top: 39px;
+    left: 26px;
+    width: 257px;
+    height: 587px;
+    border: none;
+    border-radius: 24px;
+    background-color: black;
+}
+
+iframe#cam {
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 15px;
+    height: 14px;
+    border-radius: 20px;
+    border: none;
 }
 
 section#redes-sociais {
